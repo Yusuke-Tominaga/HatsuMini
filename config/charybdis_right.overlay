@@ -17,13 +17,14 @@
     };
 };
 
-&tb_listener {                    /* ← 実際のラベル名に合わせる！ */
-    layers = <4>;
+&trackball_listener {
+    layers = <4>;                /* LB1 が切り替える SCROLL レイヤ番号 */
     input-processors = <
         &zip_xy_to_scroll_mapper
-        &scroll_half 1 2          /* mult=1 div=2 → ½ 速 */
+        &scroll_half 1 2         /* mult=1 div=2 → 半速 */
     >;
 };
+
 
 &spi0 {
     status = "okay";
