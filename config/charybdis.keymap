@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL  15
-
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT 0
