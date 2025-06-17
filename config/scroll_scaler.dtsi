@@ -1,0 +1,19 @@
+/ {
+  input_processors {
+    /* 例：2 倍速用スケーラ */
+    scroll_double: scroll_double {
+      compatible = "zmk,input-processor-scaler";
+      #input-processor-cells = <2>;      /* mult div */
+      type  = <INPUT_EV_REL>;
+      codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
+    };
+
+    /* （お好みで）半速用スケーラ */
+    scroll_half: scroll_half {
+      compatible = "zmk,input-processor-scaler";
+      #input-processor-cells = <2>;
+      type  = <INPUT_EV_REL>;
+      codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
+    };
+  };
+};
