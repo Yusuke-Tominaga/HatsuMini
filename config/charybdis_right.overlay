@@ -17,15 +17,6 @@
     };
 };
 
-&trackball_listener {
-    layers = <4>;                /* LB1 が切り替える SCROLL レイヤ番号 */
-    input-processors = <
-        &zip_xy_to_scroll_mapper
-        &scroll_half 1 2         /* mult=1 div=2 → 半速 */
-    >;
-};
-
-
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
