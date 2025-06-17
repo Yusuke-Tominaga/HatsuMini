@@ -79,7 +79,6 @@
 
         layers = <4>;                        /* LB1 が入る SCROLL レイヤ */
 
-        /* ▼ 1 行で書いても複数行でも同じ。必ず <…>, <…>; の形 */
         input-processors = <&xy_to_scroll_mapper>,   /* XY→Scroll 変換 */
                            <&scroll_half 1 2>;       /* mult=1 div=2 → 半速 */
     };
