@@ -46,8 +46,8 @@
         scroll {
             layers = <1>;
             input-processors =
-                <&zip_xy_to_scroll_mapper     /* XY をホイールに変換   */
-                 &zip_scroll_scaler 1 4>;     /* 1/4 に減速            */
+                <&zip_xy_to_scroll_mapper
+                 &zip_scroll_scaler 1 8>;
         };
     };
 };
