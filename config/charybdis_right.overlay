@@ -17,6 +17,14 @@
     };
 };
 
+&charybdis_trackball_listener {
+  layers = <4>;                                /* LB1 が切り替える SCROLL レイヤ番号 */
+  input-processors = <
+    &zip_xy_to_scroll_mapper                   /* XY → ホイール変換 */
+    &scroll_half   1 2                         /* ★ mult=1 div=2 → 1/2 速 */
+  >;
+};
+
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
