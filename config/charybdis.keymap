@@ -107,10 +107,10 @@
         number_layer {
             label = "NUMBER";
             bindings = <
-&kp K_MUTE     &kp C_VOL_DN  &kp C_VOLUME_UP  &kp UP_ARROW    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
-&kp BACKSPACE  &none         &kp LEFT         &kp DOWN_ARROW  &kp RIGHT             &none                 &kp F6        &kp F7        &none         &none         &none         &kp ENTER
-&kp GRAVE      &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3    &kp NUMBER_4          &kp NUMBER_5          &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none
-                                              &none           &none                 &none                 &mkp RCLK     &none         &none
+&kp K_MUTE     &kp C_VOL_DN  &kp C_VOLUME_UP  &kp UP_ARROW    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &none
+&kp BACKSPACE  &none         &kp LEFT         &kp DOWN_ARROW  &kp RIGHT             &none                 &kp F6        &kp F7        &none           &none         &none         &kp ENTER
+&kp GRAVE      &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3    &kp NUMBER_4          &kp NUMBER_5          &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &kp NUMBER_0  &none
+                                              &none           &none                 &none                 &mkp RCLK     &msc SCRL_UP  &msc SCRL_DOWN
             >;
         };
 
