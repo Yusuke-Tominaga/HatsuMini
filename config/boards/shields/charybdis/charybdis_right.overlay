@@ -76,9 +76,8 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device     = <&trackball>;
-        layers     = <4>;                      /* ← LB1 が入る SCROLL レイヤ */
+        layers     = <1>;                      /* ← LB1 が入る SCROLL レイヤ */
 
-        /* ▼ かならず <…>, <…>; と “カンマで区切って” 書く。コメントは外側に置く */
         input-processors = <&xy_to_scroll_mapper>,   /* XY→Scroll 変換           */
                            <&scroll_half 1 2>;       /* mult=1 div=2 → 半速 1/2  */
     };
