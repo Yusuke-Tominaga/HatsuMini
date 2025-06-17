@@ -68,7 +68,7 @@
 
         layers = <4>;                               /* LB1 が切り替える SCROLL レイヤ */
         input-processors = <
-            &zip_xy_to_scroll
+            &xy_to_scroll
             &scroll_half 1 2                       /* mult=1 div=2 → 半速 */
         >;
     };
