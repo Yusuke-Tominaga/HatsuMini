@@ -62,23 +62,9 @@
 };
 
 / {
-    xy_to_scroll_mapper: xy_to_scroll_mapper {
-        compatible = "zmk,input-processor-xy-to-scroll";
-    };
-
-    scroll_half: scroll_half {
-        compatible = "zmk,input-processor-scaler";
-        #input-processor-cells = <2>;
-        type  = <INPUT_EV_REL>;
-        codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
-    };
-
     trackball_listener {
         compatible = "zmk,input-listener";
         device     = <&trackball>;
-        layers     = <1>;
 
-        input-processors = <&xy_to_scroll_mapper>,
-                           <&scroll_half 1 2>;
     };
 };
