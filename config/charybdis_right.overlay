@@ -54,7 +54,7 @@
         device = <&trackball>;
         layers = <1>;
 
-        input-processors = <&xy_to_scroll_mapper>,
-                           <&scroll_half 1 2>;
+        input-processors = <&xy_to_scroll_mapper
+                            &scroll_half 1 3>;
     };
 };
