@@ -68,7 +68,7 @@
 
     scroll_half: scroll_half {
         compatible = "zmk,input-processor-scaler";
-        #input-processor-cells = <2>;          /* mult div */
+        #input-processor-cells = <2>;
         type  = <INPUT_EV_REL>;
         codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
     };
@@ -76,9 +76,9 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device     = <&trackball>;
-        layers     = <1>;                      /* ← LB1 が入る SCROLL レイヤ */
+        layers     = <1>;
 
-        input-processors = <&xy_to_scroll_mapper>,   /* XY→Scroll 変換           */
-                           <&scroll_half 1 2>;       /* mult=1 div=2 → 半速 1/2  */
+        input-processors = <&xy_to_scroll_mapper>,
+                           <&scroll_half 1 2>;
     };
 };
