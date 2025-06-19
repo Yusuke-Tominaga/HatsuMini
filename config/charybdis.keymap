@@ -25,12 +25,12 @@
             key-positions = <37 12>;
         };
 
-        return {
+        return2 {
             bindings = <&kp RETURN>;
             key-positions = <37 23>;
         };
 
-        backspace {
+        backspace2 {
             bindings = <&kp BACKSPACE>;
             key-positions = <40 12>;
         };
