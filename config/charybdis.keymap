@@ -15,91 +15,24 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_lbrc {
-            timeout-ms = <50>;
-            key-positions = <4 5>; // KP: VB
-            bindings = <&mt RBRC LBRC>;
-            layers = <0 2>;
-        };
-
-        combo_rbrc {
-            timeout-ms = <50>;
-            key-positions = <6 7>; // KP: NM
-            bindings = <&kp RBRC>;
-            layers = <0 2>;
-        };
-
-        combo_lpar {
-            timeout-ms = <50>;
-            key-positions = <16 17>; // KP: FG
-            bindings = <&mt RPAR LPAR>;
-            layers = <0 2>;
-        };
-
-        combo_rpar {
-            timeout-ms = <50>;
-            key-positions = <18 19>;
-            bindings = <&kp RPAR>;
-            layers = <0 2>;
-        };
-
-        combo_lbkt {
-            timeout-ms = <50>;
-            key-positions = <28 29>; // KP: RT
-            bindings = <&mt RBKT LBKT>;  // 可以用CMD+这个单手返回到代码上一个编辑的地方 或者网页返回
-            layers = <0 2>;
-        };
-
-        combo_rbkt {
-            timeout-ms = <50>;
-            key-positions = <30 31>; // KP: YU
-            bindings = <&kp RBKT>;
-            layers = <0 2>;
-        };
-
-        esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>; // ESC
-            layers = <0>;
-        };
-
-        up {
-            bindings = <&kp UP>;
-            key-positions = <3 4>;
-            layers = <0>;
-            timeout-ms = <50>;
-        };
-
-        down {
-            bindings = <&kp DOWN>;
-            key-positions = <27 28>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        left {
-            bindings = <&kp LEFT>;
-            key-positions = <14 15>;
-            layers = <0>;
-            timeout-ms = <50>;
-        };
-
-        right {
-            bindings = <&kp RIGHT>;
-            key-positions = <15 16>;
-            layers = <0>;
-            timeout-ms = <50>;
-        };
-
         return {
             bindings = <&kp RETURN>;
-            key-positions = <22 21>;
+            key-positions = <23 40>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <19 20>;
+            key-positions = <37 12>;
+        };
+
+        return {
+            bindings = <&kp RETURN>;
+            key-positions = <37 23>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <40 12>;
         };
     };
 
@@ -119,8 +52,8 @@
         hotkey_layer {
             label = "HOTKEY";
             bindings = <
-&none          &none     &none     &kp UP    &none       &none        &none      &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS   &none
-&kp BACKSPACE  &none     &kp LEFT  &kp DOWN  &kp RIGHT   &none        &none      &kp ASTRK      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS  &kp ENTER
+&none          &none     &none     &kp UP    &none       &none        &none      &kp SLASH      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS   &none
+&kp BACKSPACE  &none     &kp LEFT  &kp DOWN  &kp RIGHT   &none        &none      &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp ENTER
 &kp TILDE      &kp EXCL  &kp AT    &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL  &none
                                    &none     &none       &none        &mkp RCLK  &none          &mkp MCLK
             >;
