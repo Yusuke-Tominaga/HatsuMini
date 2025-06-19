@@ -12,29 +12,7 @@
 #define HOTKEY  3
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        return {
-            bindings = <&kp RETURN>;
-            key-positions = <23 40>;
-        };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <37 12>;
-        };
-
-        return2 {
-            bindings = <&kp RETURN>;
-            key-positions = <37 23>;
-        };
-
-        backspace2 {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <40 12>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
