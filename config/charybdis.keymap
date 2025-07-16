@@ -30,10 +30,10 @@
         hotkey_layer {
             label = "HOTKEY";
             bindings = <
-&none      &none     &none     &kp UP    &none       &none        &msc SCRL_DOWN  &kp SLASH      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS   &kp F15
-&kp TILDE  &none     &kp LEFT  &kp DOWN  &kp RIGHT   &none        &msc SCRL_UP    &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp F14
-&none      &kp EXCL  &kp AT    &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET       &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL  &kp UNDER
-                               &none     &none       &none        &mkp RCLK       &none          &mkp MCLK
+&none      &none     &none     &kp UP    &none       &none               &msc SCRL_DOWN  &kp UNDER         &kp LEFT_BRACE   &kp EQUAL             &kp PLUS               &kp F15
+&kp TILDE  &none     &kp LEFT  &kp DOWN  &kp RIGHT   &none               &msc SCRL_UP    &kp LEFT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_BRACKET     &kp MINUS              &kp F14
+&none      &kp EXCL  &kp AT    &kp HASH  &kp DOLLAR  &kp PERCENT         &kp CARET       &kp AMPERSAND     &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt RIGHT_SHIFT LANG1
+                               &none     &none       &mt LEFT_ALT SPACE  &mkp RCLK       &none             &mkp MCLK
             >;
         };
 
