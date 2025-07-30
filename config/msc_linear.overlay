@@ -1,0 +1,6 @@
+/* config/msc_linear.overlay */
+
+&msc {
+    time-to-max-speed-ms = <0>;   /* 一瞬で最大速度へ */
+    acceleration-exponent = <0>;  /* 完全リニア */
+};
