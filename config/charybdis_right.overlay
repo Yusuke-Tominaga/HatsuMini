@@ -51,3 +51,12 @@
         };
     };
 };
+
+/ {
+    behaviors {
+        &msc {                       /* Mouse Scroll の既定ノード */
+            time-to-max-speed-ms = <0>;   /* 加速にかける時間を 0 ms */
+            acceleration-exponent = <0>;   /* 0 = 完全リニア */
+        };
+    };
+};
