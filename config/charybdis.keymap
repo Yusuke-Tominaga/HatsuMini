@@ -10,7 +10,7 @@
 #define NUMBER  1
 #define FN  2
 #define HOTKEY  3
-#define PMW33XX_LIFTOFF_DISTANCE 0x03  // デフォルトは 0x02
+#define PMW33XX_LIFTOFF_DISTANCE 0x01  // デフォルトは 0x02
 
 
 / {
